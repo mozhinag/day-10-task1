@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+      
+        <form id="infoForm">
+            <div class="form-group">
+        <label for="fname"> <h4>FirstName:</h4> </label><br>
+        <input type="text"   id="fname" name = "fname" required><br><br>
+        </div>
+        <div class="form-group">
+        <label for="lname"><h4>LastName:</h4></label><br>
+        <input type="text"   id="lname" name = "lname" required><br><br>
+        </div>
+       
+                <div class="form-group">
+            <label for="address"><h4>Address:</h4></label><br>
+            <textarea type="text" id="address"  name ="address" rows="4" required></textarea><br><br>
+            </div>
+            <div class="form-group">
+            <label for="pin"><h4>Pincode:</h4></label><br>
+            <input type="number"   id="pin" name="pin" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="gender"><h4>Gender:</h4></label><br>
+          
+            <input type="radio" id="male" name="gender"  value="male">
+            <label for="male">Male</label>
+            <input type="radio"id="female" name="gender" value="female" required >
+            <label for="female">Female</label>
+            </div>
+            <label for="foods"><h4>Favorite Foods (Select at least 2):</h4></label><br>
+        <select id="foods" name="foods" multiple required>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Sushi">Sushi</option>
+            <option value="Salad">Salad</option>
+        </select><br><br>
+            <div class="form-group">
+                <label for="state"><h4>State:</h4></label><br>
+                <input type="text" id="state" name ="state" required><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="country"><h4>Country:</h4></label><br>
+                    <input type="text"  id="country " name="country" required><br><br>
+                    </div>
+                </form>
+                <button type="submit" onclick="submitform()" class="btn btn-success">Submit</button>
+                <br><br>
+<h2>Registered Members Data</h2>
+<table id="infoTable">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Pincode</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Choice of Food</th>
+                <th scope="col">State</th>
+                <th scope="col">Country</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+<script src="script.js"></script>
+</body>
+</html>

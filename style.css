@@ -1,0 +1,54 @@
+.container{
+    background-color: rgb(247, 242, 236);
+}
+input[type="text"]{
+    width: 60%;
+    background-color: rgba(172, 235, 214, 0.74);
+}
+textarea[type="text"]{
+    width: 60%;
+    background-color: rgba(172, 235, 214, 0.74);
+
+}
+input[type="number"] {
+    width: 30%;
+    background-color: rgba(172, 235, 214, 0.74);
+}
+
+#infoTable{
+    background-color: rgba(172, 235, 214, 0.74);
+    text-align: left;
+    color: rgb(18, 127, 223);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    width: 80%;
+     margin: 20px auto;
+      border-radius: 8px;
+}
+th{
+    background-color: rgb(199, 217, 210);
+    color:black
+}
